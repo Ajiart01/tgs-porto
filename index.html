@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
@@ -13,10 +13,13 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" data-aos="fade-down">
         <a href="#" class="logo">Annsz
         <span>X.R</span></a>
 
@@ -32,7 +35,7 @@
     </header>
 
     <!-- Home -->
-    <section class="home" id="home">
+    <section class="home" id="home" data-aos="fade-up">
         <article class="home-content">
             <h1>Hello, <span>I am</span></h1>
             <h3 class="typing-text">Andini Annasya W</h3>
@@ -47,38 +50,38 @@
             <a href="#" class="btn">Contact</a>
         </article>
 
-        <div class="home-img-container">   
+        <div class="home-img-container" data-aos="fade-right">   
             <img src="img/anu.png" alt="annsz">
             <h3 class="text-anim">I'm a <span></span></h3>
         </div>
     </section>
 
     <!-- About -->
-    <section class="about" id="about">
+    <section class="about" id="about" data-aos="fade-left">
         <h2 class="heading">About <span>Me</span></h2>
 
-        <div class="about-img">
+        <div class="about-img" data-aos="zoom-in">
             <img src="img/ann.jpeg" alt="profile">
             <span class="circle-spin"></span>
         </div>
 
-        <div class="about-content">
+        <div class="about-content" data-aos="fade-up">
             <h3>Andini Annasya W</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, odio facilis eligendi nisi illum fuga aperiam vel officiis, eum quos quod eius nihil. Non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quam atque mollitia ullam quae aliquid. Maxime non, facilis iure cumque quasi accusamus ipsam illo.</p>
         </div>
 
-        <div class="btn-box">
+        <div class="btn-box" data-aos="fade-up">
             <a href="#" class="btn">Read More</a>
         </div>
     </section>
 
     <!-- Skills -->
-    <section class="skills" id="myskill">
+    <section class="skills" id="myskill" data-aos="zoom-in">
         <h2 class="heading">My <span>Skills</span></h2>
     
         <div class="skil">
-            <div class="container1">
-                    <h1 class="heading1">Coding Skills</h1>
+            <div class="container1" data-aos="fade-right">
+                <h1 class="heading1">Coding Skills</h1>
 
                 <!-- Konten technical bars -->
                 <div class="Technical-bars">
@@ -117,8 +120,7 @@
                 </div>
             </div>
     
-    
-            <div class="container1">
+            <div class="container1" data-aos="fade-left">
                 <h1 class="heading1">Professional Skills</h1>
     
                 <!-- Konten radial bars -->
@@ -128,14 +130,13 @@
                             <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                             <circle class="path path-1" cx="100" cy="100" r="80"></circle>
                         </svg>
-                            <div class="percentage">50%</div>
-                            <div class="text">Web Developer</div>
+                        <div class="percentage">50%</div>
+                        <div class="text">Web Developer</div>
                     </div>
                     <div class="radial-bar">
                         <svg x="0px" y="0px" viewBox="0 0 200 200">
                             <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
                             <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-    
                         </svg>
                         <div class="percentage">70%</div>
                         <div class="text">Web Designer</div>
@@ -162,19 +163,19 @@
     </section>
     
     <!-- Services -->
-    <section class="services" id="services">
+    <section class="services" id="services" data-aos="fade-up">
         <h2 class="heading">My <span>Services</span></h2>
 
         <div class="services-container">
-            <div class="services-box">
-                <i class='bx bx-code-alt' ></i>
+            <div class="services-box" data-aos="fade-right">
+                <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
 
                 <a href="#" class="btn">Read More</a>
             </div>
             
-            <div class="services-box">
+            <div class="services-box" data-aos="fade-up">
                 <i class='bx bxs-paint'></i>
                 <h3>Graphic Design</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
@@ -182,8 +183,8 @@
                 <a href="#" class="btn">Read More</a>
             </div>
 
-            <div class="services-box">
-                <i class='bx bx-bar-chart-alt' ></i>
+            <div class="services-box" data-aos="fade-left">
+                <i class='bx bx-bar-chart-alt'></i>
                 <h3>Digital Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi itaque similique, architecto eaque ut quas delectus pariatur nesciunt in eligendi mollitia dicta.</p>
 
@@ -192,47 +193,16 @@
         </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="contacth">
-            <h2 class="heading">Contact <span>Me</span></h2>
-        </div>
-        
-        <div class="contact-text">
-            <h4>Lets work together</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione saepe corporis dicta cupiditate ad nulla nam?</p>
-            <ul class="contact-list">
-                <li><i class="bx bxs-send"></i> ansynti8@gmail.com</li>
-                <li><i class="bx bxs-phone"></i> 081280512161</li>
-            </ul>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/annsyt_"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/+6281280512161"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="https://github.com/AndiniRan"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-        </div>
-        
-        <div class="contact-form">
-            <form action="">
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Email" required>
-                <input type="number" placeholder="Enter Your Mobile Number" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea placeholder="Enter Your Message" required></textarea>
-                <input type="submit" value="Submit" class="send">
-            </form>
-        </div>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
 
-    </section>
-    
-    <!-- Footer -->
-    <div class="last-text">
-        <h3 class="text-last">Created by <span>Andini</span></h3>
-    </div>
-    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
-
-    <!-- Javascript -->
+    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>
