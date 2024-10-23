@@ -11,21 +11,25 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Selanjutnya adalah bagian root untuk color dan ukuran default */
 :root {
     --bg-color: #252631;
     --second-bg-color: #262835;
     --text-color: #115791;
     --main-color:#006fca;
 }
+
 html {
     font-size: 62.5%;
     overflow-x: hidden;
 }
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 
+/* Header styles */
 .header {
     position: fixed;
     top: 0;
@@ -40,6 +44,7 @@ body {
     z-index: 100;
 }
     
+/* Logo styles */
 .logo {
     font-size: 3rem;
     color: var(--text-color);
@@ -47,18 +52,22 @@ body {
     cursor: pointer;
     transition: 0.3s ease;
 }
-.logo:hover{
+
+.logo:hover {
     color: rgb(0, 204, 255);
     transform: scale(1.1);
 }
+
 .logo span {
     text-shadow: 0 0 25px var(--main-color);
     color: #006fca;
 }
-header a.logo{
+
+header a.logo {
     border-bottom: 3px solid #2940a7;
 }
 
+/* Navbar styles */
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
@@ -67,22 +76,20 @@ header a.logo{
     transition: all .5s ease 0s;
     border-bottom: 3px solid transparent;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     border-bottom: 3px solid #2940a7;
     color: rgb(0, 204, 255);
 }
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--main-color);
     display: none;
 }
 
-section{
-    min-height: 100vh;
-    padding: 10rem 7% 10rem;
-}
-
-.home{
+/* Additional styles for the home section */
+.home {
     display: flex;
     align-items: center;
     margin-left: 8rem;
@@ -98,29 +105,30 @@ section{
     flex-direction: column;
 }
 
-.home .home-content h1{
+.home .home-content h1 {
     font-size: 6rem;
     font-weight: 700;
     line-height: 1.3;
     color: #b5effd;
 }
 
-span{
+span {
     color: #025aa1;
 }
 
-.home-content h3{
+.home-content h3 {
     font-size: 3.2rem;
     font-weight: .3;
     font-weight: 700;
 }
 
-.home-content p{
+.home-content p {
     font-size: 1.5rem;
     color: #b5effd;
 }
 
-.social-icons a{
+/* Social Icons and Button styles */
+.social-icons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -135,13 +143,13 @@ span{
     color: #84cfe2;
 }
 
-.social-icons a:hover{
+.social-icons a:hover {
     transform: scale(1.3) translateY(-5px);
     background-color: #487eaa;
     box-shadow: 0  0 25px #56b3ff;
 }
 
-.btn{
+.btn {
     display: inline-block;
     width: fit-content;
     padding: 1rem 2.8rem;
@@ -156,14 +164,15 @@ span{
     cursor: pointer;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale3d(1.03);
     background-color: #487eaa;
     color: #84cfe2;
     box-shadow: 0 0 25px #73bdfa;
 }
 
-.typing-text{
+/* Typing animation styles */
+.typing-text {
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
@@ -174,44 +183,50 @@ span{
     background-position: 0 0;
     animation: annsz 20s linear infinite;
 }
-@keyframes annsz{
-    100%{
+
+@keyframes annsz {
+    100% {
         background-position: 2000px 0;
     }
 }
 
-
+/* Styles for image container */
 div.home-img-container {
- display: flex;
- justify-content: center;
- align-items: center;
- flex-direction: column;
- gap: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0px;
 }
+
 .home-img-container img {
     bottom: 0;
     width: 70%;
     display: flex;
     margin: auto;
 }
+
 .home-img-container {
     height: fit-content;
 }
 
+/* Text animation styles */
 h3.text-anim {
     font-size: 3rem;
     width: fit-content;
 }
+
 .text-anim span {
     position: relative;
 }
-.text-anim span::before{
+
+.text-anim span::before {
     content: 'Web Developer';
     color: #b5effd;
     animation: words 20s infinite;
 }
 
-.text-anim span::after{
+.text-anim span::after {
     content: '';
     background-color: var(--bg-color);
     position: absolute;
@@ -221,55 +236,39 @@ h3.text-anim {
     right: -8px;
     animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
 }
-@keyframes cursor{
-    to{
+
+/* Additional animation keyframes */
+@keyframes cursor {
+    to {
         border-left: 2px solid var(--main-color);
     }
 }
-@keyframes words{
-    0%,
-    25%{
+
+@keyframes words {
+    0%, 25% {
         content: 'Web Developer';
     }
-    26%,
-    50%{
+    26%, 50% {
         content: 'Web Designer';
     }
-    51%,
-    75%{
+    51%, 75% {
         content: '-';
     }
-    76%,
-    100%{
+    76%, 100% {
         content: 'Editor';
     }
 }
-@keyframes typing{
-    10%,
-    15%,
-    30%,
-    35%,
-    60%,
-    65%,
-    90%,
-    95%{
+
+@keyframes typing {
+    10%, 15%, 30%, 35%, 60%, 65%, 90%, 95% {
         width: 0;
     }
-    5%,
-    20%,
-    25%,
-    40%,
-    45%,
-    50%,
-    55%,
-    70%,
-    75%,
-    80%,
-    85%,
-    100%{
+    5%, 20%, 25%, 40%, 45%, 50%, 55%, 70%, 75%, 80%, 85%, 100% {
         width: calc(100% + 8px);
     }
 }
+
+
 
 .about {
     display: flex;
